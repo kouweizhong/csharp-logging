@@ -22,3 +22,4 @@ License
 ----
 
 MIT
+...Except for one part - AT.MIN.Tools which is CPOL - working on that even if I end up writing my own sprintf!

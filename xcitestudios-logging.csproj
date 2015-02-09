@@ -49,7 +49,8 @@
     <DocumentationFile>bin\Release\com.xcitestudios.Logging.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="com.xcitestudios.Generic">
@@ -60,8 +61,10 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AT\MIN\Tools.cs" />
     <Compile Include="com\xcitestudios\Logging\Interfaces\ILogger.cs" />
     <Compile Include="com\xcitestudios\Logging\Interfaces\ILogMessage.cs" />
+    <Compile Include="com\xcitestudios\Logging\LogMessage.cs" />
     <Compile Include="com\xcitestudios\Logging\LogSeverity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
