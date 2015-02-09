@@ -1,14 +1,15 @@
 ﻿namespace com.xcitestudios.Logging.Interfaces
 {
+    using com.xcitestudios.Generic.Data.Manipulation.Interfaces;
     using System;
 
     /// <summary>
     /// A message to be logged.
     /// </summary>
-    public interface ILogMessage
+    public interface ILogMessage: ISerialization
     {
         /// <summary>
-        /// Set the severity of this log message. See <see cref="com.xcitestudios.Logging.Interfaces.ILogSeverity"/>.
+        /// Set the severity of this log message. See <see cref="com.xcitestudios.Logging.LogSeverity"/>.
         /// </summary>
         LogSeverity Severity { get; set; }
 
@@ -51,17 +52,5 @@
         /// Any extra data to store alongside the log entry.
         /// </summary>
         string Extra { get; set; }
-
-        /// <summary>
-        /// Convert a JSON representation of this message in to an actual LogMessage object.
-        /// </summary>
-        /// <param name="jsonString">Representation of this message</param>
-        void Deserialize(string jsonString);
-
-        /// <summary>
-        /// Convert this message into JSON so it can be handled by anything that supports JSON.
-        /// </summary>
-        /// <returns>A representation of this log message.</returns>
-        string Serialize();
     }
 }
