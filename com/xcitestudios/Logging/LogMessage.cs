@@ -8,8 +8,11 @@
     using System.Runtime.Serialization.Json;
     using System.Text;
 
+    /// <summary>
+    /// 
+    /// </summary>
     [DataContract]
-    class LogMessage : ILogMessage
+    public class LogMessage : ILogMessage
     {
         /// <summary>
         /// Set the severity of this log message. See <see cref="com.xcitestudios.Logging.LogSeverity"/>.

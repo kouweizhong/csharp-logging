@@ -5,16 +5,40 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xcitestudios-logging", "xcitestudios-logging.csproj", "{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{08957B3A-20B4-40B9-81AE-A192616AFE91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Release|x64.ActiveCfg = Release|Any CPU
+		{E1E4A5F5-2D3E-461A-B10D-6A3682683D2E}.Release|x86.ActiveCfg = Release|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Release|ARM.ActiveCfg = Release|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Release|x64.ActiveCfg = Release|Any CPU
+		{08957B3A-20B4-40B9-81AE-A192616AFE91}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

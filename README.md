@@ -23,3 +23,5 @@ License
 
 MIT
 ...Except for one part - AT.MIN.Tools which is CPOL - working on that even if I end up writing my own sprintf!
+
+The unit tests make use of Newtonsoft.Json (http://www.newtonsoft.com/) which is licensed under AGPL 3.0 http://www.gnu.org/licenses/agpl-3.0.html
