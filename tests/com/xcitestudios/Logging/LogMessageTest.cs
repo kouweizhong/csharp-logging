@@ -23,7 +23,7 @@
             logMessage.DateTime = DateTime.Now;
             logMessage.Severity = LogSeverity.error;
 
-            var json = logMessage.Serialize();
+            var json = logMessage.SerializeJSON();
 
             string textSchema;
 
@@ -66,10 +66,10 @@
             logMessage.DateTime = DateTime.Now;
             logMessage.Severity = LogSeverity.error;
 
-            var json = logMessage.Serialize();
+            var json = logMessage.SerializeJSON();
 
             var newMessage = new LogMessage();
-            newMessage.Deserialize(json);
+            newMessage.DeserializeJSON(json);
 
             Assert.AreEqual(logMessage.Message, newMessage.Message);
             CollectionAssert.AreEquivalent(logMessage.MessageArgs, newMessage.MessageArgs);
