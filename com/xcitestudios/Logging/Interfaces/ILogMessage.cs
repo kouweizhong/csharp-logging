@@ -1,6 +1,6 @@
 ﻿namespace com.xcitestudios.Logging.Interfaces
 {
-    using com.xcitestudios.Generic.Data.Manipulation.Interfaces;
+    using global::com.xcitestudios.Generic.Data.Manipulation.Interfaces;
     using System;
 
     /// <summary>
@@ -9,7 +9,7 @@
     public interface ILogMessage: ISerialization
     {
         /// <summary>
-        /// Set the severity of this log message. See <see cref="com.xcitestudios.Logging.LogSeverity"/>.
+        /// Set the severity of this log message. See <see cref="global::com.xcitestudios.Logging.LogSeverity"/>.
         /// </summary>
         LogSeverity Severity { get; set; }
 

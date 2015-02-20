@@ -1,6 +1,7 @@
 ﻿namespace com.xcitestudios.Logging
 {
-    using com.xcitestudios.Logging.Interfaces;
+    using global::com.xcitestudios.Generic.Data.Manipulation;
+    using global::com.xcitestudios.Logging.Interfaces;
     using System;
     using System.Globalization;
     using System.IO;
@@ -12,10 +13,10 @@
     /// 
     /// </summary>
     [DataContract]
-    public class LogMessage : ILogMessage
+    public class LogMessage : JsonSerializationHelper, ILogMessage
     {
         /// <summary>
-        /// Set the severity of this log message. See <see cref="com.xcitestudios.Logging.LogSeverity"/>.
+        /// Set the severity of this log message. See <see cref="global::com.xcitestudios.Logging.LogSeverity"/>.
         /// </summary>
         public LogSeverity Severity { get; set; }
 
@@ -116,25 +117,16 @@
         /// <param name="jsonString">Representation of the object</param>
         public void Deserialize(string jsonString)
         {
-            using (var ms = new MemoryStream())
-            {
-                var jsonBytes = Encoding.UTF8.GetBytes(jsonString);
+            var obj = Deserialize<LogMessage>(jsonString);
 
-                ms.Write(jsonBytes, 0, jsonBytes.Length);
-
-                ms.Position = 0;
-                var ser = new DataContractJsonSerializer(typeof(LogMessage));
-                var obj = ser.ReadObject(ms) as LogMessage;
-
-                Severity = obj.Severity;
-                DateTime = obj.DateTime;
-                Source = obj.Source;
-                Application = obj.Application;
-                Module = obj.Module;
-                Message = obj.Message;
-                MessageArgs = obj.MessageArgs;
-                Extra = obj.Extra;
-            }
+            Severity = obj.Severity;
+            DateTime = obj.DateTime;
+            Source = obj.Source;
+            Application = obj.Application;
+            Module = obj.Module;
+            Message = obj.Message;
+            MessageArgs = obj.MessageArgs;
+            Extra = obj.Extra;
         }
 
         /// <summary>
@@ -143,16 +135,7 @@
         /// <returns>A JSON representation of this object</returns>
         public string Serialize()
         {
-            using(var ms = new MemoryStream())
-            { 
-                var ser = new DataContractJsonSerializer(typeof(LogMessage));
-                ser.WriteObject(ms, this);
-                ms.Position = 0;
-                using (var sr = new StreamReader(ms))
-                {
-                    return sr.ReadToEnd();
-                }
-            }
+            return Serialize<LogMessage>();
         }
     }
 }

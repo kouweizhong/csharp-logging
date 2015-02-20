@@ -49,8 +49,6 @@
                 }
             }
 
-            Console.WriteLine(json);
-
             Assert.IsTrue(isValid, errorMessage);
         }
 
