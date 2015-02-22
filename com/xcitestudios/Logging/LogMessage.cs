@@ -115,7 +115,7 @@
         /// as opposed to returning a new instance of this object.
         /// </summary>
         /// <param name="jsonString">Representation of the object</param>
-        public void Deserialize(string jsonString)
+        public void DeserializeJSON(string jsonString)
         {
             var obj = Deserialize<LogMessage>(jsonString);
 
@@ -133,7 +133,7 @@
         /// Convert this object into JSON so it can be handled by anything that supports JSON.
         /// </summary>
         /// <returns>A JSON representation of this object</returns>
-        public string Serialize()
+        public string SerializeJSON()
         {
             return Serialize<LogMessage>();
         }
