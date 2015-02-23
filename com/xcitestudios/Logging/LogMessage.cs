@@ -13,7 +13,7 @@
     /// 
     /// </summary>
     [DataContract]
-    public class LogMessage : JsonSerializationHelper, ILogMessage
+    public class LogMessage : JsonSerializationHelper, ILogMessageSerializable
     {
         /// <summary>
         /// Set the severity of this log message. See <see cref="global::com.xcitestudios.Logging.LogSeverity"/>.

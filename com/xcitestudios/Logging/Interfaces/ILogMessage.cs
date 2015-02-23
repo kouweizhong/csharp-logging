@@ -1,12 +1,11 @@
 ﻿namespace com.xcitestudios.Logging.Interfaces
 {
-    using global::com.xcitestudios.Generic.Data.Manipulation.Interfaces;
     using System;
 
     /// <summary>
     /// A message to be logged.
     /// </summary>
-    public interface ILogMessage: ISerialization
+    public interface ILogMessage
     {
         /// <summary>
         /// Set the severity of this log message. See <see cref="global::com.xcitestudios.Logging.LogSeverity"/>.

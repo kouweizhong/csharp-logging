@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="AT\MIN\Tools.cs" />
     <Compile Include="com\xcitestudios\Logging\Interfaces\ILogger.cs" />
+    <Compile Include="com\xcitestudios\Logging\Interfaces\ILogMessageSerializable.cs" />
     <Compile Include="com\xcitestudios\Logging\Interfaces\ILogMessage.cs" />
     <Compile Include="com\xcitestudios\Logging\LogMessage.cs" />
     <Compile Include="com\xcitestudios\Logging\LogSeverity.cs" />
