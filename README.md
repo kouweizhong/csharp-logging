@@ -8,7 +8,7 @@ Interfaces designed to unify and simplify logging across multiple languages (C# 
 From the start the packages are available on NuGet to make them easy to install in any project.
 
 ```sh
-$ Install-Package com.xcitestudios.Logging -Pre
+$ Install-Package com.xcitestudios.Logging
 ```
 
 Alternatively, just include the source files.
