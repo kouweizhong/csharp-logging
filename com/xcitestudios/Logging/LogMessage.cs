@@ -54,7 +54,7 @@
         { 
             get
             {
-                return DateTime.ToString(@"yyyy-MM-ddTHH\:mm\:sszzz");
+                return DateTime.ToUniversalTime().ToString(@"yyyy-MM-ddTHH\:mm\:ss") + "+00:00";
             }
             set
             {
