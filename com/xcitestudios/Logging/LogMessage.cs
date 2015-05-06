@@ -13,6 +13,7 @@
     /// 
     /// </summary>
     [DataContract]
+    [Serializable]
     public class LogMessage : JsonSerializationHelper, ILogMessageSerializable
     {
         /// <summary>

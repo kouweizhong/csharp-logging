@@ -1,8 +1,11 @@
 ﻿namespace com.xcitestudios.Logging
 {
+    using System;
+
     /// <summary>
     /// Log severities based on syslog.
     /// </summary>
+    [Serializable]
     public enum LogSeverity
     {
         /// <summary>
