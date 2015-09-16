@@ -37,11 +37,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="com.xcitestudios.Generic">
-      <HintPath>..\packages\com.xcitestudios.Generic.1.0.0-CI00003\lib\net45\com.xcitestudios.Generic.dll</HintPath>
+    <Reference Include="com.xcitestudios.Generic, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\com.xcitestudios.Generic.1.0.8.0\lib\net45\com.xcitestudios.Generic.dll</HintPath>
     </Reference>
     <Reference Include="com.xcitestudios.Network">
-      <HintPath>..\packages\com.xcitestudios.Network.1.0.8.0\lib\net40\com.xcitestudios.Network.dll</HintPath>
+      <HintPath>..\packages\com.xcitestudios.Network.1.0.25.0\lib\net45\com.xcitestudios.Network.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
